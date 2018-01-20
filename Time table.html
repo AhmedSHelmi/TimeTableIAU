@@ -1,0 +1,41 @@
+<!--
+
+
+ Time Table Creator Version 1.0
+ coded by: Ahmed Shawkat
+ This code can be previewed on:
+ http://goo.gl/1MdbyU
+ 
+
+-->
+<html>
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script src="sc.js" href="sc.js"></script>
+<link rel="stylesheet" type="text/css"href="sc.css">
+  <title>Time table creator</title>
+  </head>
+  <body>
+  <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+  <div class="demo-ribbon">
+    <br /><br /><br />
+  <div id="subjects"></div>
+  <p class="paragraph" id="button">  Choose the number of courses you have<br> </p>
+  <input type="number"id="number"min="0" max="10"value="0" ><br>
+  <div id="myDiv"><br>
+  <input type="submit" onclick="st()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="proceed" id="button"/ >
+  </div>
+  <div id="button"class="button">
+  </div>
+  <br>
+  <br /><br />
+  <div id="table" style="width:100%">
+  </div>
+  </div>
+  </div>
+  <input type="submit" value="reset" id="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="reload()" />
+  </body>
+
+</html>

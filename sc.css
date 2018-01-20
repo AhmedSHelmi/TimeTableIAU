@@ -1,0 +1,50 @@
+
+/*
+ Time Table Creator Version 1.0
+ coded by: Ahmed Shawkat
+ This code can be previewed on:
+ http://goo.gl/1MdbyU
+ 
+*/
+
+
+*{
+    text - align: center;
+} /*Choose the number of subjects you have*/ #
+paragraph {
+    font - size: 1.12e m;
+    font - style: oblique;
+    font - family: sans - serif;
+    font - size - adjust: auto;
+}#
+button {
+    border - radius: 2e m;
+}
+table {
+    table - layout: fixed;
+    width: 90 % ;
+    border: solid;
+    border - radius: .3e m;
+    margin: 2e m auto;
+}
+td {
+    width: 20 % ;border: solid lightgray;
+}.mdl - textfield__input {
+    width: 20 % ;text - align: center;margin: 0 auto;
+}.mdl - textfield__input: hover {
+    caret - color: blue;
+}.mdl - textfield__input: focus {
+    width: 19e m;
+}#
+number {
+    width: 19e m;height: 1.8e m;
+}
+td th {
+    margin: 2e m;
+}#
+list {
+    width: 100 % ;height: 100 % ;
+}
+input::-webkit - calendar - picker - indicator {
+    display: none;
+}
