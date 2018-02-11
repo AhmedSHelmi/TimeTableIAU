@@ -1,5 +1,5 @@
 /*
- Time Table Creator Version 1.0
+ Time Table Creator Version 1.0.1
  coded by: Ahmed Shawkat
  This code can be previewed on:
  http://goo.gl/1MdbyU
