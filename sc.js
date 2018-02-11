@@ -9,11 +9,11 @@
 
 var arr = [];
 var numofsub;
-var colors = ['lightgray', 'aqua', 'lime', 'LawnGreen', 'Aquamarine', 'SkyBlue', 'PaleGreen', '#D3D3D3', 'GoldenRod'];
+//Colors were removed to improve performance ( Will be added in the up coming releases
 
 function st() {
     numofsub = document.getElementById('number').value;
-    console.log(numofsub);
+   
     var str = '';
     for (var i = 1; i <= numofsub; i++) {
         str += 'subject no ' + (i) + ": <input type='text' class='mdl-textfield__input' id='name" + i + "'class='subjects' > <br/><br/>";
@@ -24,7 +24,7 @@ function st() {
         elem.parentNode.removeChild(elem);
         var elem = document.getElementById("myDiv");
         elem.parentNode.removeChild(elem);
-        console.log(arr);
+   
         var E = document.getElementById("button").innerHTML = "<input type='submit' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' id='ctable'class='button' />";
         document.getElementById("ctable").addEventListener("click", CTable);
     } else {
@@ -43,7 +43,7 @@ function CTable() {
         var sub = document.getElementById("name" + i).value;
         arr.push(sub);
     }
-    console.log('reached ' + arr.length + arr);
+
     var tab = document.getElementById('table');
     tab.innerHTML = "<table style=\"\">" + "<tr>" + "<td>" + "Time/Day" + "</td>" + "<td>" + "Sunday" + "</td>" + "<td>" + "Monday" + "</td>" + "<td>" + "Tuesday" + "</td>" + "<td>" + "Wednesday" + "</td>" + "<td>" + "Tursday" + "</td>" + "</tr>" + "<tr>" + "<td>" + "8-9" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "<tr>" + "<td>" + "9-10" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "<tr>" + "<td>" + "10-11" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "<tr>" + "<td>" + "11-12" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "<tr>" + "<td>" + "12-1" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "<tr>" + "<td>" + "1-2" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "<tr>" + "<td>" + "2-3" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "<tr>" + "<td>" + "3-4" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "<tr>" + "</tr>" + "<td>" + "4-5" + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "<td>" + Selector() + "</td>" + "</tr>" + "</table>";
 }
